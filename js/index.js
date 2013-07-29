@@ -27,13 +27,13 @@ function startDl() {
     buttonDom.setAttribute("disabled", "disabled");
 
     var ft = new FileTransfer();
-    var uri = encodeURI("http://archive.org/download/Kansas_Joe_Memphis_Minnie-When_Levee_Breaks/Kansas_Joe_and_Memphis_Minnie-When_the_Levee_Breaks.mp3");
+    var uri = encodeURI("http://media.downloadming.se/Bhaag%20Milkha%20Bhaag%20(2013)/Bhaag%20Milkha%20Bhaag%20(2013)/04%20-%20Maston%20Ka%20Jhund%20-%20DownloadMing.SE.mp3");
 
     var downloadPath = fileSystem.root.fullPath + "/download.mp3";
 
     ft.onprogress = function (progressEvent) {
         if (progressEvent.lengthComputable) {
-            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 50);
             statusDom.innerHTML = perc + "% loaded...";
         } else {
             if (statusDom.innerHTML == "") {
