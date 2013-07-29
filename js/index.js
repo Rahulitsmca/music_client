@@ -27,7 +27,7 @@ function startDl() {
     buttonDom.setAttribute("disabled", "disabled");
 
     var ft = new FileTransfer();
-    var uri = encodeURI("http://media.downloadming.se/Bhaag%20Milkha%20Bhaag%20(2013)/Bhaag%20Milkha%20Bhaag%20(2013)/04%20-%20Maston%20Ka%20Jhund%20-%20DownloadMing.SE.mp3");
+    var uri = encodeURI("http://media.downloadming.se/Bhaag Milkha Bhaag (2013)/Bhaag Milkha Bhaag (2013)/04 - Maston Ka Jhund - DownloadMing.SE.mp3");
 
     var downloadPath = fileSystem.root.fullPath + "/download.mp3";
 
